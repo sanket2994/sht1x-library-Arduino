@@ -35,3 +35,9 @@ No need to include the following functions in the main as they re internally cal
 
 8. void skipCRC();		//skip the CRC check
     Skip the CRC check.
+
+
+Note: Since this is a c library while including the header file in your code do it in:
+extern "c"{
+    #include<sht11.h>
+    }
