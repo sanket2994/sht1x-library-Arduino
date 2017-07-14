@@ -37,7 +37,9 @@ No need to include the following functions in the main as they re internally cal
     Skip the CRC check.
 
 
-Note: Since this is a c library while including the header file in your code do it as follows:
-extern "c"{
-    #include<sht11.h>
-    }
+Note: 1. Since this is a c library while including the header file in your code do it as follows:
+    extern "c"{
+        #include<sht11.h>
+        }
+      2. The repository also contains a main.ino file which will serve as an example as to how you can code using the library.
+
