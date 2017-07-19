@@ -2,7 +2,7 @@ extern "C"{
   #include <sht11.h>
 }
 
-int data,clk;
+int data=10,clk=11;
 void setup() {
   Serial.begin(38400);
   Serial.println("Start the SHT11 sensor");
