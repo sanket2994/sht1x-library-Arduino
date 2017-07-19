@@ -27,7 +27,7 @@ float readTempF(int data, int clk)
 	int obtVal;
 	float temp;
 	
-	const float D1 = 39.5 ; //at 3.3V
+	const float D1 = -39.5 ; //at 3.3V
 	const float D2 = 0.018; //for 14 bit data
 	
 	obtVal=getTempfrmSensor(data,clk); //get the reading from sensor (raw data)
@@ -176,7 +176,7 @@ int ShiftIn(int data, int clk)
   digitalWrite(clk,LOW);
   
   pinMode(data,INPUT);
-  pinMode(clk,OUTPUT);
+ 
   read1=0;
   read1=shiftIn(data,clk,MSBFIRST); //read LSB byte of from the sensor
   val1|=read1; //add LSB to MSB
